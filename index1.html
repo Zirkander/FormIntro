@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="">
+
+        <div><label for="first_name">First Name: * </label>
+        <input type="text" name="first_name" id="first_name" required></div>
+        <br>
+
+        <div><label for="last_name">Last Name: * </label>
+        <input type="text" name="last_name" id="last_name" required></div>
+        <br>
+
+        <div>
+            <label for="email">Email: * </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password: * </label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="date" id="date">
+
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="gender" id="male" value="male" >
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+
+            <input type="radio" name="gender" id="non-binary" value="non-binary">
+            <label for="non-binary">Non-binary</label>
+
+            <input type="radio" name="gender" id="I prefer not to answer" value="I prefer not to answer">
+            <label for="I prefer not to answer">I prefer not to answer</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="language">Favorite Language:</label>
+            <select name="language" id="language">
+                <option value="python">python</option>
+                <option value="java">Java</option>
+                <option value="c-sharp">C#</option>
+                <option value="swift">Swift</option>
+                <option value="ruby">Ruby</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="description">A short description about yourself</label>
+            <br>
+            <textarea id="description" name="description" rows="2" cols="100"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="updates" name="updates" value="updates">
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" class="submit" value="Create Account">
+        </div>
+
+    </form>
+    <p style="color: red;">* Indicates a required field</p>
+
+</body>
+</html>
